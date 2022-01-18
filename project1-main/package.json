@@ -1,0 +1,27 @@
+{
+  "name": "project1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "delete-regression-reports": "rmdir /s /q \"cypress/reports\"",
+    "pretest": "npm run delete-regression-reports",
+    "test": "cypress run --browser chrome || :",
+    "posttest": "npm run merge-reports && npm run generate-report",
+    "merge-reports": "mochawesome-merge cypress/reports/specs-reports/*.json > cypress/reports/regression-report/mochawesome.json",
+    "generate-report": "marge cypress/reports/regression-report/mochawesome.json --reportDir ./ --inline"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^9.2.1",
+    "cypress-mochawesome-reporter": "^2.3.0",
+    "mochawesome": "^7.0.1",
+    "mochawesome-merge": "^4.2.1",
+    "mochawesome-report-generator": "^6.0.1"
+  },
+  "dependencies": {
+    "faker": "^5.5.3"
+  }
+}

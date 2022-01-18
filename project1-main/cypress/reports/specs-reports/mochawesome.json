@@ -1,0 +1,126 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-01-12T10:34:02.886Z",
+    "end": "2022-01-12T10:34:19.094Z",
+    "duration": 16208,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5cb99798-e35c-46ad-a105-0e666b39ac88",
+      "title": "",
+      "fullFile": "cypress/integration/tests/ShopTest.spec.js",
+      "file": "cypress/integration/tests/ShopTest.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ab8c5544-6afc-4e36-8ef3-d74699c15e41",
+          "title": "Regretion test Demoqa cart function",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "56e19d54-d3a6-4551-8165-41d0ae2635fd",
+              "title": "shop",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "returnOrderNumber",
+                  "fullTitle": "Regretion test Demoqa cart function shop returnOrderNumber",
+                  "timedOut": null,
+                  "duration": 16059,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "// HomePage.writeDefaultSearch()\n_HomePage.default.writeSearch('shirt'); // SearchPage.clickFirstItem()\n\n_SearchPage.default.clickItemAtIndex(2); // SearchPage.clickRandomItem()\n// SearchPage.clickItemByText(\"Frill ribbed\")\n\n_ItemPage.default.selectFirstColorOption(); // ItemPage.selectColorOptionByValue(\"mustard\")\n\n_ItemPage.default.selectFirstSizeOption(); // ItemPage.selectSizeOptionByValue(\"Medium\")\n\n_ItemPage.default.clickAddToCartButton();\n_ItemPage.default.clickViewCartButton();\n_CartPage.default.clickCheckoutButton(); // CheckOutPage.writeRandomFirstName()\n\n_CheckoutPage.default.writeFirstName('mike'); // CheckOutPage.writeRandomLastName()\n\n_CheckoutPage.default.writeLastName('law');\n_CheckoutPage.default.selectDefaultCountry(); // CheckOutPage.selectCountry('Yemen')\n// CheckOutPage.writeRandomAddress()\n\n_CheckoutPage.default.writeAddress('21 jump street');\n_CheckoutPage.default.writeCity('New York'); // CheckOutPage.writeDefaultCity()\n// CheckOutPage.selectDefaultState()\n\n_CheckoutPage.default.selectState('New York'); // CheckOutPage.writeDefaultZipCode()\n\n_CheckoutPage.default.writeZipCode('10001'); // CheckOutPage.writeRandomPhoneNumber()\n\n_CheckoutPage.default.writePhoneNumber('0123456789'); // CheckOutPage.writeRandomEmail()\n\n_CheckoutPage.default.writeEmail('sample@gmail.com');\n_CheckoutPage.default.clickAgreeToTerms();\n_CheckoutPage.default.clickPleaceOrderButton();\n_OrderPage.default.verifyOrderSuccessful();\n_OrderPage.default.logOrdernNumber();",
+                  "err": {},
+                  "uuid": "8e06ef41-986d-41c5-9271-58b9f88515d6",
+                  "parentUUID": "56e19d54-d3a6-4551-8165-41d0ae2635fd",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "8e06ef41-986d-41c5-9271-58b9f88515d6"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 16059,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/specs-reports",
+        "reportFileName": "report",
+        "overwrite": true,
+        "html": false,
+        "json": true,
+        "charts": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

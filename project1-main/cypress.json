@@ -1,0 +1,29 @@
+{
+  "baseUrl": "https://shop.demoqa.com/",
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "reportDir": "cypress/reports/specs-reports",
+    "reportFileName": "report",
+    "overwrite": true,
+    "html": false,
+    "json": true,
+    "charts":true
+  },
+ 
+  "screenshotOnRunFailure": true,
+  "screenshotsFolder": "cypress/reports/regression-report/assets",
+  "videosFolder": "cypress/reports/regression-report/assets",
+  "videoUploadOnPasses": false,
+  "video": true,
+  "env": {
+    "shopSearch": "dress",
+    "checkoutButton": ".checkout-button.button.alt.wc-forward",
+    "country": "United States (US)",
+    "city": "New York",
+    "state": "New York",
+    "zip": "10001",
+    "orderConfirmationMessage": "Thank you. Your order has been received.",
+    "itemText": "frill ribbed mini dress",
+    "itemSelectionWarningMessage":"Please select some product options before adding this product to your cart"
+  }
+}
